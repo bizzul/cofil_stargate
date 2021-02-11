@@ -1,10 +1,9 @@
 REPOSITORY PER IL PROGETTO 2021 COFIL STARGATE
 
-Questa REPOSITORY contiene 3 branch
+Questa REPOSITORY contiene 2 branch
 
 1. Master
 2. Experimental
-3. Test Vari
 
 
 Il progetto è di creare un FUNNEL (Virtual tour) dove si presenta l'azienda in modo simpatico ed animato.
@@ -20,3 +19,21 @@ LIBRERIE PER LO SCOPO::
 - BARBA.JS (Pensato per le transizioni tra un posto e l'altro, ancora da capire se lo useremo o no alla fine)
 - MATERIAL ICON
 - ...
+
+La cartella threejs_start l'ho creata con parcel in node.js partendo dal boilerplate threejs_boilerplate.
+
+Parcel esamina la struttura e ti crea un nuovo progetto con tutti i file necessari, e ti avvia un server in localhost:1234
+
+GUIDA PER SVILUPPARE E VEDERE IL PROGETTO IN CORSO:::::
+
+Una volta sincronizzata questa REPOSITORY sul proprio PC, installare NODE.JS   https://nodejs.org/dist/v14.15.5/node-v14.15.5-x64.msi
+
+una volta installato, aprire il CMD e scrivere 'npm install -g parcel'   Questo installera parcel e tutti e requisiti
+
+Entrare nella cartella 'threejs_start' con il cmd     es. cd /Documents/GitHub/cofil_stargate/threejs_start
+
+scrivere 'parcel index.html'     Questo avvia il server e carica il sito con tutti i requisiti.
+
+In visual studio aprire il progetto github e iniziare a lavorare, a fine giornata fare il commit su github app, cosi si carica tutto sul progetto.
+
+FINE!!!
