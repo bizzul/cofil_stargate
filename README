@@ -1,0 +1,22 @@
+REPOSITORY PER IL PROGETTO 2021 COFIL STARGATE
+
+Questa REPOSITORY contiene 3 branch
+
+1. Master
+2. Experimental
+3. Test Vari
+
+
+Il progetto è di creare un FUNNEL (Virtual tour) dove si presenta l'azienda in modo simpatico ed animato.
+
+
+LIBRERIE PER LO SCOPO::
+
+- THREE.JS  (RENDER GRAFICO 3D con il quale importiamo i nostri modelli e vari oggetti nello spazio 3D)
+    - threex_domevents.js (usato per catturare gli eventi del mouse e tastiera dello specifico oggetto 3D)
+    - GLTFLoader.js (per importare i file 3D creati con Cinema4D e convertiti in .glb)
+    - OrbitControls.js (usato per fare orbitare l'oggetto nello spazio 3D)
+- GSAP (lo ueseremo per animare il tutto e per fare le transizioni tra una scena e l'altra)
+- BARBA.JS (Pensato per le transizioni tra un posto e l'altro, ancora da capire se lo useremo o no alla fine)
+- MATERIAL ICON
+- ...
