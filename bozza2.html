@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Layout</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="inc/lib/fullpage/fullpage.css" />
+	<link rel="stylesheet" type="text/css" href="https://www.affiliationsoftware.network/inc/lib/wow/animate.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,300&family=Oswald:wght@300;400;500&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+	
+	<style>
+		
+		/*****************************
+			UI
+		*****************************/
+		body {
+			margin: 0;
+		}
+		.wow { 
+			visibility: hidden;
+		}
+		/***** header *****/
+		#header {
+			border-bottom: solid 1px #AAA;
+			background: #FFF;
+			height: 110px;
+			top: 0;
+			left: 0;
+			right: 0;
+			position: fixed;
+			z-index: 2;
+		}
+		#header .container-fluid {
+			padding-right: 0;
+		}
+		#header #logo {
+			padding: 10px 20px 0;
+		}
+		#header #menu2 {
+			background: #942925;
+			height: 110px;
+			font: 500 18px/110px 'Oswald', sans-serif;
+			padding: 0 35px;
+			letter-spacing: 2px;
+		}
+		#header #menu2 a {
+			color: #FFF;
+			text-decoration: none;
+		}
+		#header #menu2 a:hover {
+			text-decoration: underline;
+		}
+		#header #menu {
+			margin: 40px 40px;
+		}
+		#header #menu a {
+			color: #AAA;
+			text-decoration: none;
+			font-size: 20px;
+		}
+		#header #menu a:hover {
+			color: #333;
+		}
+		/***** footer *****/
+		#contact {
+			bottom: 10px;
+			right: 30px;
+			position: fixed;
+			z-index: 2;
+			/*height: 45px;
+			width: 200px;*/
+			font: 500 18px/110px 'Oswald', sans-serif;
+			letter-spacing: 2px;
+		}
+		#contact a {
+			color: #666;
+			text-decoration: none;
+		}
+		#contact a img {
+		  -webkit-transition: -webkit-transform .8s ease-in-out;
+				  transition:         transform .8s ease-in-out;
+		}
+		#contact a:hover img {
+		  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+		}
+		
+		/**** nav *****/
+		#myMenu {
+			position: fixed; 
+			z-index: 2; 
+			bottom: 20px;
+			right: 0;
+			left: 0;
+			margin: 0 auto;
+			width: 150px;
+			height: 40px;
+
+		  list-style-type: none;
+		  padding: 0;
+		  overflow: hidden;
+		}
+		#myMenu li {
+			float: left;
+		}
+		#myMenu li a {
+			display: block;
+			color: #666;
+			text-decoration: none;
+			text-align: center;
+			padding: 0 10px;
+			font-size: 40px;
+		}
+		#myMenu li.active a {
+			color: #942925;
+		}
+		
+		/**** desc ***/
+		.mydesc {	
+		}
+		.mydesc h3 {
+			font: 400 62px 'Raleway', sans-serif;
+			color: #333;
+		}
+		.mydesc p {
+			font: 400 32px 'Open Sans', sans-serif;
+			color: #333;
+		}
+		.mydesc p span {
+			color: #942925;
+		}
+		
+		
+		
+
+
+		
+	</style>
+	
+</head>
+<body>
+	
+<div id="header">
+
+	<div class="container-fluid">
+
+		<div id="logo" class="float-start">
+			<a href=""><img src="inc/img/logo.png" alt="Cofil"></a>
+		</div>
+
+		<div id="menu2" class="float-end">
+			<a href="#">Shop now &nbsp; <span>&gt;</span></a>
+		</div>
+		<div id="menu" class="float-end">
+			<a href="#"><i class="fas fa-volume-up"></i></a>
+		</div>
+		<!--div id="menu1" class="float-end">
+			altra icona
+		</div-->
+
+	</div>
+
+</div>
+
+<div id="contact">
+
+	<a href="#">Contact NOW &nbsp;<img src="inc/img/contact.png" alt="contact" /></a>
+
+</div>
+
+<div id="fullpage">
+	
+	<div class="section active" id="section0">
+		
+		<div class="container-fluid">
+		  <div class="row">
+			<div class="offset-2 col-3">
+				
+				<div class="mydesc wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+					<h3 class="mb-5">EXPOLORE THE FUTURE</h3>
+					<p><span>The future</span> of Mecatronic <span>is now</span></p>
+				</div>
+				
+			</div>
+			<div class="col-5 text-center">
+			  <img src="inc/img/ok.png" alt="ok" class="wow bounceInUp" data-wow-duration="2s" data-wow-delay="0s">
+			</div>
+		  </div>
+		</div>
+
+	</div>
+	
+	<div class="section" id="section1">
+		
+		
+		<div class="container-fluid">
+		  <div class="row">
+			<div class="offset-2 col-3">
+				
+				<div class="mydesc wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+					<h3 class="mb-5">EXPOLORE THE FUTURE</h3>
+					<p><span>The future</span> of Mecatronic <span>is now</span></p>
+				</div>
+				
+			</div>
+			<div class="col-5 text-center">
+			  <img src="inc/img/ok.png" alt="ok" class="wow bounceInUp" data-wow-duration="2s" data-wow-delay="0s">
+			</div>
+		  </div>
+		</div>
+
+		
+	
+	</div>
+	
+	<div class="section" id="section2"><h1 class="text-center">section3</h1></div>
+	
+	<div class="section text-center" id="section3">
+	    <div class="slide "><h1>section4</h1></div>
+	    <div class="slide active"><h1>section4</h1></div>
+	    <div class="slide"><h1>And text</h1></div>
+	    <div class="slide"><h1>And more text</h1></div>
+	</div>
+	
+	
+</div>
+	
+	
+	
+<ul id="myMenu" >
+	<li data-menuanchor="firstPage" class="active"><a href="#firstPage">&bull;</a></li>
+	<li data-menuanchor="secondPage"><a href="#secondPage">&bull;</a></li>
+	<li data-menuanchor="thirdPage"><a href="#thirdPage">&bull;</a></li>
+	<li data-menuanchor="fourthPage"><a href="#fourthPage">&bull;</a></li>
+</ul>
+	
+	
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>	 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/jquery.easings.min.js" integrity="sha512-rXZZDfRSa6rsBuT78nRTbh1ccwpXhTCspKUDqox3hUQNYdjB6KB6mSj6mXcB9/5F5wODAJnkztXPxzkTalp11w==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/vendors/scrolloverflow.js" integrity="sha512-13ryG34lkmhOD5L4DTd7z1AmhUl+bhFfE7xmMvs5K3Tm9O4ua0VZs8FBuBgI4AGIAB2icf3FtGQ/fpZUGFcnkA==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.7/jquery.fullpage.extensions.min.js" integrity="sha512-0xW5KFMtT462F65vVvIejNawM1U2Fp/yhItmQVFUwdYP+R9tQFCn4QtLEhkp6RoGovZ6YCvbxy+GVCtGv0+nvA==" crossorigin="anonymous"></script>	
+<script src="https://cdn.boomcdn.com/libs/wow-js/1.3.0/wow.min.js" ></script>	
+<script>
+
+	
+$(document).ready(function() {
+	$('#fullpage').fullpage({
+		//options here
+		//autoScrolling:true,
+		//scrollHorizontally: true,
+		//sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+		scrollBar: true,
+		paddingTop: '110px',
+		paddingBottom: '60px',
+		/*scrollOverflow:true*/
+		anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'],
+		menu: '#myMenu',
+		
+		// callback
+		afterLoad: function(origin, destination, direction){
+			var loadedSection = this;
+			var var1 = origin.index;
+			var var2 = origin.anchor;
+			//alert("Section ended loading");
+
+		}
+		
+		
+	});
+
+	//methods
+	//$.fn.fullpage.setAllowScrolling(false);
+
+});
+	
+
+new WOW().init();
+	
+</script>
+	
+
+	
+</body>
+</html>
